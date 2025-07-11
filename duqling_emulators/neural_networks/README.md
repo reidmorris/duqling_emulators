@@ -26,9 +26,7 @@ Given all of this, the model is currently constructed as follows:
 $$
 \begin{aligned}
     \underset{n \times d}{H}^{[0]} &= X \in \mathbb{R}^{n \times d} \\
-
     \underset{n \times w}{H}^{[1]} &= \sigma\left(\underset{n \times d}{H}^{[0]} \hspace{3mm} \left(\underset{w \times d}{W}^{[1]}\right)^T + \underset{1 \times w}{\hat{b}}^{[1]}\right) \\
-
     \underset{n \times w}{H}^{[l]} &= \sigma\left(\underset{n \times w}{H}^{[l-1]} \left(\underset{w \times w}{W}^{[l]}\right)^T + \underset{1 \times w}{\hat{b}}^{[l]}\right) \quad \mid \quad l = 2, \ldots, L \\
     \underset{n \times 1}{y} &= \underset{n \times w}{H}^{[L]} \left(\underset{1 \times w}{W}^{[L+1]}\right)^T + \underset{1 \times 1}{\hat{b}}^{[L+1]}
 \end{aligned}
