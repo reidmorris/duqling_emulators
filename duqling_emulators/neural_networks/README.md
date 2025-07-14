@@ -19,9 +19,9 @@ The training pipeline uses an early stopping heuristic to escape unnecessary com
 
 ### Architecture
 
-A note on the layer shapes available to Bayesian optimization: despite being able to adjust the dimension of every hidden layer, the initial implementation chooses a single width for all layers. Changing individual layer widths could, in theory, force the model to learn greater abstract representations of the data. However, optimizing this kind of heirarchical thinking is very hard - both in theory and in practice.
+#### SquareNet
 
-Given all of this, the model is currently constructed as follows:
+Despite being able to adjust the dimension of every hidden layer, the initial implementation chooses a single width for all layers. Changing individual layer widths could, in theory, force the model to learn greater abstract representations of the data. However, optimizing this kind of heirarchical thinking is very hard - both in theory and in practice. So, for an initial implementation, I only varied the depth and overall width of the network. Since every hidden layer has the same width $w$, I've called this network SquareNet.
 
 $$
 \begin{aligned}
