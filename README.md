@@ -11,7 +11,7 @@ The surrogate models are trained on benchmark functions from the [Duqling](https
 
 ### Todo:
 
-- build a more nuanced NAS
+- [ ] build a more nuanced NAS
     - [ ] support intra-architecture variability of layer shapes
     - [ ] allow different activations across layers
 - [ ] refactor and organize file structure
